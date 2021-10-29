@@ -19,7 +19,7 @@ const Logar: React.FC = () => {
     event.preventDefault();
     setLoader(true)
     api.post('session', data).then( response => {
-      localStorage.setItem('@userBla', JSON.stringify(response.data))
+      localStorage.setItem('@userKronton', JSON.stringify(response.data))
       toast.success('Conta criada com sucesso', {
         onClose: () => history.push('/dash')
       })

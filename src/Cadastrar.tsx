@@ -18,7 +18,7 @@ const Cadastrar: React.FC = () => {
     event.preventDefault();
     api.post('users', data).then( response => {
       if(response.status === 200){
-        toast.success('Conta criada com sucesso', {
+        toast.success('Cadastro rtealizado com sucessoß', {
           onClose: () => history.push('/logar')
         })
       }
